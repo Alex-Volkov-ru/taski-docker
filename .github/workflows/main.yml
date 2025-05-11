@@ -180,6 +180,5 @@ jobs:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           message: |
             🚀 Taski успешно обновлен!
-            ⏱️ ${{ format(utcnow(), 'dd.MM.yyyy HH:mm') }} UTC
             📝 Коммит: ${{ github.event.head_commit.message }}
             🔗 Подробности: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
